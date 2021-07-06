@@ -1,0 +1,269 @@
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: sans-serif;}
+
+header{
+  width: 100%;
+  height: 100vh;
+  background:  #000000;
+  clip-path: polygon(0% 0%,100% 0%,100% 100%,80% 80%,0% 100%);
+}
+nav{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 5px;
+
+}
+#blue{
+  color: #00ffcc;
+}
+.menu a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+}
+.menu a:first-child{
+  border-bottom: 2px solid #00ffcc;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.left{
+  flex-basis: 50%;
+}
+
+.right{
+  flex-basis: 50%;
+  max-width: 600px;
+}
+.right h1{
+  color: #00ffcc;
+  font-size: 50px;
+}
+.right p{
+  font-size: 25px;
+  margin: 10px 0;
+}
+.bttn{
+  background: transparent;
+  padding: 10px 20px;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  border-radius: 9px;
+}
+#about{
+  padding: 100px 0px;
+}
+.about-row{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-left-coll{
+  flex-basis: 50%;
+}
+.about-right-coll{
+  flex-basis: 50%;
+  text-align: center;
+}
+.about-right-coll img{
+  width: 60%;
+}
+.about-left-coll{
+  max-width: 400px;
+  margin: auto;
+}
+.about-left-coll h1{
+  font-size: 50px;
+}
+.about-left-coll p{
+  font-size: 20px;
+  text-align: justify;
+  margin: 15px 0px;
+}
+.c-bttn{
+  padding: 10px;
+  margin: 10px 0px;
+  color: white;
+  border: none;
+  background-color: #000000;
+}
+
+#signup{
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background: rgba(0,0,0,0.03);
+	clip-path: polygon(0% 0%,100% 0%, 100% 100%,80% 80%,0% 100%);
+}
+
+.signup-row{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.signup-left-col{
+	flex-basis: 50%;
+	text-align:center;
+}
+.signup-left-col img{
+	width: 60%;
+}
+.signup-right-col{
+	flex-basis: 50%;
+}
+
+.signup-right-col h1{
+	font-size: 60px;
+}
+.signup-right-col h2{
+	font-size: 25px;
+	letter-spacing: 60px;
+	color: rgba(0,0,0,0.3);
+	margin: 10px 0px;
+}
+.c-bttn{
+	padding: 10px;
+	margin: 40px 0px;
+	color: white;
+	border: none;
+	background: #74b9ff;
+}
+#services{
+  padding: 50px 0px;
+}
+.services-info{
+  text-align: center;
+}
+.services-info h1{
+  font-size: 50px;
+}
+.services-info p{
+  font-size: 25px;
+  font-weight: bold;
+}
+.service-row{
+}
+.services-row{
+  display: grid;
+  grid-template-columns: repeat(3,400px);
+  grid-auto-rows: minmax(150px,auto);
+  grid-gap: 3em;
+  justify-content: center;
+  padding-top: 20px;
+}
+.services-box{
+  box-shadow: 2px 3px 5px grey;
+  padding: 30px;
+  text-align: center;
+  background-color: black;
+}
+.services-box h2{
+  padding: 10px 0;
+  color: #00ffcc;
+}
+.services-box p{
+  color: white;
+}
+#members{
+  padding: 100px;
+  background-image: url(images/2.png);
+  background-size: 35% 55%;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.member-card{
+  text-align: center;
+  padding: 50px;
+  width: 50%;
+  margin: auto;
+}
+.member-card p{
+  margin: 20px 0px;
+}
+.margin-card h2{
+  margin: 20px 0px;
+}
+#work{
+  padding: 50px;
+  padding-bottom: 700px;
+  background: rgba(0, 0, 0, 0.9);
+  clip-path: polygon(0% 0%,100% 0%, 100% 100%,80% 80%,0% 100%);
+}
+.work-box{
+  box-shadow: 2px 3px 5px grey;
+}
+.work-box img{
+  width: 100%;
+  height: 100%;
+}
+#contact{
+  padding: 120px 0px;
+}
+.contact-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-left-col{
+  flex-basis: 50%;
+  padding-top: 50px;
+}
+.contact-right-col{
+  flex-basis: 50%;
+  max-width: 450px;
+  margin: auto;
+}
+.contact-right-col p{
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+.contact-right-col{
+  flex-basis: 50%;
+}
+.form{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.form input[type="text"]{
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+textarea{
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.bttn2{
+  background: #74b9ff;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  border: none;
+}
+#footer{
+  background: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+img { max-width: 100%; height: auto; }
